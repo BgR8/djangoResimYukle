@@ -1,0 +1,8 @@
+db.sqlite3
+media
+
+djangoresim/__pycache__/*
+resim/__pycache__/*
+
+resim/migrations/*
+!resim/migrations/__init__.py
