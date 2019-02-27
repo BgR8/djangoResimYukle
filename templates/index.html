@@ -33,6 +33,7 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Başlık</th>
+                    <th scope="col">Resim</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -40,7 +41,12 @@
                     {% for resim in resimler %}
                     <tr>
                         <th scope="row">{{resim.id}}</th>
-                        <td>{{resim.title}}</td>                            
+                        <td>{{resim.title}}</td>
+                        <td>
+                          {% if resim.image %}
+                            <img src="{{ resim.image.url }}" class="img-responsive" alt="" style="width: 50px;">
+                          {% endif %}
+                        </td>                            
                     </tr>
                     {% endfor %}
                         
