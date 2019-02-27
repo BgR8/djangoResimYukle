@@ -1,7 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from .models import Resim
 from .forms import PostForm
-from PIL import Image
 
 # Create your views here.
 def index(request):
